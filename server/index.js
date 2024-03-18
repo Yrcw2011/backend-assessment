@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-
 const app = express();
 
 app.use(cors());
@@ -11,4 +10,7 @@ const { getCompliment } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 
-app.listen(4000, () => console.log("Server running on 4000"));
+
+
+
+app.listen(4004, () => console.log("Server running on 4004"));
